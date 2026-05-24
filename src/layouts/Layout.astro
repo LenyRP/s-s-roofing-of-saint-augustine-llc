@@ -1,0 +1,73 @@
+---
+const { title, description, canonical } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <style is:global>
+      :root {
+        --primary: #10b981;
+        --primary-dark: color-mix(in srgb, #10b981 80%, black);
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'DM Sans', sans-serif; color: #1a1a1a; background: #fff; line-height: 1.6; }
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav style="background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:100;">
+      <div style="max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px;">
+        <a href="/" style="font-family:'DM Serif Display',serif;font-size:1.2rem;font-weight:700;color:#111;">S&S Roofing</a>
+        <div style="display:flex;align-items:center;gap:24px;font-size:0.9rem;">
+          <a href="/#services" style="color:#444;font-weight:500;">Services</a>
+          <a href="/#areas" style="color:#444;font-weight:500;">Service Areas</a>
+          <a href="/#faq" style="color:#444;font-weight:500;">FAQ</a>
+          <a href="tel:9048260370" style="background:var(--primary);color:#fff;padding:8px 20px;border-radius:8px;font-weight:700;">(904) 826-0370</a>
+        </div>
+      </div>
+    </nav>
+
+    <slot />
+
+    <!-- FOOTER -->
+    <footer style="background:#111;color:#aaa;padding:48px 20px 24px;">
+      <div style="max-width:1100px;margin:0 auto;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:40px;">
+          <div>
+            <p style="color:#fff;font-family:'DM Serif Display',serif;font-size:1.1rem;margin-bottom:12px;">S&S Roofing of Saint Augustine LLC</p>
+            <p style="font-size:0.85rem;">S&S Roofing of Saint Augustine LLC is a family-owned, fully licensed and insured roofing contractor ...</p>
+          </div>
+          <div>
+            <p style="color:#fff;font-weight:700;margin-bottom:12px;">Services</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">Roof Replacement</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">Roof Repair</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">Gutter Installation</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">Storm Damage</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">Shingle Repair</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">Roof Inspection</p>
+          </div>
+          <div>
+            <p style="color:#fff;font-weight:700;margin-bottom:12px;">Contact</p>
+            <p style="font-size:0.85rem;margin-bottom:6px;">(904) 826-0370</p>
+            
+            <p style="font-size:0.85rem;">1144 Kerri Lynn Rd, St. Augustine, FL 32084, USA </p>
+          </div>
+        </div>
+        <p style="font-size:0.8rem;border-top:1px solid #333;padding-top:24px;text-align:center;">
+          &copy; 2026 S&S Roofing of Saint Augustine LLC. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
