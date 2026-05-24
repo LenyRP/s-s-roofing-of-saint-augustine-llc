@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "S&S Roofing of Saint Augustine LLC",
+  "description": "S&S Roofing of Saint Augustine LLC is a family-owned, fully licensed and insured roofing contractor that has been protecting Northeast Florida homes and businesses since 2005. Led by Steve Cox and based in St. Augustine, the S&S crew specializes in new roof installations, complete roof replacements, repairs, and roof cleaning for both residential and commercial properties — including shingle, metal, and tile systems. Customers consistently praise the team for honest pricing, quality workmanship, and fast turnaround. No job is too big or too small, and free estimates are always available. Florida State Certified Roofing Contractor — License #CCC1330682.",
+  "telephone": "(904) 826-0370",
+  
+  "address": { "@type": "PostalAddress", "streetAddress": "1144 Kerri Lynn Rd, St. Augustine, FL 32084, USA", "addressLocality": "St Augustine, FL", "addressRegion": "", "postalCode": "" },
+  "areaServed": ["St Augustine, FL","Saint Augustine","St. Augustine Beach","Vilano Beach","Crescent Beach","Anastasia Island","Hastings","Elkton","St. Johns","World Golf Village","Nocatee","Ponte Vedra Beach","Fruit Cove","Switzerland","Palm Coast","Palatka","Jacksonville","Jacksonville Beach"],
+  "priceRange": "$$"
+};
+---
+<Layout
+  title="S&S Roofing of Saint Augustine LLC | Roofer in St Augustine, FL"
+  description="S&S Roofing of Saint Augustine LLC is a family-owned, fully licensed and insured roofing contractor that has been protecting Northeast Florida homes and businesses since 2005. Led by Steve Cox and based in St. Augustine, the S&S crew specializes in new roof installations, complete roof replacements, repairs, and roof cleaning for both residential and commercial properties — including shingle, metal, and tile systems. Customers consistently praise the team for honest pricing, quality workmanship, and fast turnaround. No job is too big or too small, and free estimates are always available. Florida State Certified Roofing Contractor — License #CCC1330682."
+  canonical="https://your-domain.com/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- HERO -->
+  <section style="position:relative;overflow:hidden;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;padding:100px 20px 80px;">
+    <img src="/hero.jpg" alt="S&S Roofing of Saint Augustine LLC" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.35;z-index:0;" />
+    <div style="position:relative;z-index:1;max-width:800px;margin:0 auto;text-align:center;">
+      <p style="color:rgba(255,255,255,0.9);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.85rem;margin-bottom:16px;text-shadow:0 1px 4px rgba(0,0,0,0.6);">
+        Serving St Augustine, FL • Saint Augustine • St. Augustine Beach • Vilano Beach • Crescent Beach • Anastasia Island • Hastings • Elkton • St. Johns • World Golf Village • Nocatee • Ponte Vedra Beach • Fruit Cove • Switzerland • Palm Coast • Palatka • Jacksonville • Jacksonville Beach
+      </p>
+      <h1 style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.5rem);line-height:1.15;margin-bottom:20px;text-shadow:0 2px 8px rgba(0,0,0,0.4);">
+        Roofer Services<br/>in St Augustine, FL
+      </h1>
+      <p style="font-size:1.15rem;color:rgba(255,255,255,0.85);max-width:560px;margin:0 auto 36px;text-shadow:0 1px 4px rgba(0,0,0,0.5);">
+        No Job Too Big or Too Small — St. Augustine's Trusted Roofers.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:9048260370" style="background:var(--primary);color:#fff;padding:16px 36px;border-radius:10px;font-weight:700;font-size:1.1rem;">
+          Call (904) 826-0370
+        </a>
+        <a href="#contact" style="background:rgba(255,255,255,0.1);color:#fff;padding:16px 36px;border-radius:10px;font-weight:700;font-size:1.1rem;border:1px solid rgba(255,255,255,0.2);">
+          Free Estimate
+        </a>
+      </div>
+      <div style="display:flex;gap:32px;justify-content:center;margin-top:48px;flex-wrap:wrap;">
+        <div style="text-align:center;">
+          <p style="font-size:1.8rem;font-weight:700;color:var(--primary);">24/7</p>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:0.05em;text-shadow:0 1px 3px rgba(0,0,0,0.5);">Emergency Service</p>
+        </div>
+        <div style="text-align:center;">
+          <p style="font-size:1.8rem;font-weight:700;color:var(--primary);">100%</p>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:0.05em;text-shadow:0 1px 3px rgba(0,0,0,0.5);">Satisfaction Guaranteed</p>
+        </div>
+        <div style="text-align:center;">
+          <p style="font-size:1.8rem;font-weight:700;color:var(--primary);">Free</p>
+          <p style="font-size:0.8rem;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:0.05em;text-shadow:0 1px 3px rgba(0,0,0,0.5);">Estimates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section style="background:#f8fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0;padding:20px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;align-items:center;">
+      <span style="font-weight:700;color:#374151;">✓ Licensed & Insured</span>
+      <span style="font-weight:700;color:#374151;">✓ Local & Family Owned</span>
+      <span style="font-weight:700;color:#374151;">✓ Free Estimates</span>
+      <span style="font-weight:700;color:#374151;">✓ Flat-Rate Pricing</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="padding:80px 20px;">
+    <div style="max-width:1100px;margin:0 auto;">
+      <p style="text-align:center;color:var(--primary);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.85rem;margin-bottom:12px;">What We Do</p>
+      <h2 style="text-align:center;font-family:'DM Serif Display',serif;font-size:2.2rem;margin-bottom:48px;">Roofer Services in St Augustine, FL</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;">
+        <div style="border:1px solid #e5e7eb;border-radius:12px;padding:28px;transition:box-shadow 0.2s;">
+          <div style="width:48px;height:48px;background:color-mix(in srgb,var(--primary) 15%,transparent);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <span style="font-size:1.5rem;">🔧</span>
+          </div>
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:8px;">Roof Replacement</h3>
+          <p style="color:#6b7280;font-size:0.9rem;">Professional roof replacement services for homes and businesses in St Augustine, FL and surrounding areas.</p>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:12px;padding:28px;transition:box-shadow 0.2s;">
+          <div style="width:48px;height:48px;background:color-mix(in srgb,var(--primary) 15%,transparent);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <span style="font-size:1.5rem;">🔧</span>
+          </div>
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:8px;">Roof Repair</h3>
+          <p style="color:#6b7280;font-size:0.9rem;">Professional roof repair services for homes and businesses in St Augustine, FL and surrounding areas.</p>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:12px;padding:28px;transition:box-shadow 0.2s;">
+          <div style="width:48px;height:48px;background:color-mix(in srgb,var(--primary) 15%,transparent);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <span style="font-size:1.5rem;">🔧</span>
+          </div>
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:8px;">Gutter Installation</h3>
+          <p style="color:#6b7280;font-size:0.9rem;">Professional gutter installation services for homes and businesses in St Augustine, FL and surrounding areas.</p>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:12px;padding:28px;transition:box-shadow 0.2s;">
+          <div style="width:48px;height:48px;background:color-mix(in srgb,var(--primary) 15%,transparent);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <span style="font-size:1.5rem;">🔧</span>
+          </div>
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:8px;">Storm Damage</h3>
+          <p style="color:#6b7280;font-size:0.9rem;">Professional storm damage services for homes and businesses in St Augustine, FL and surrounding areas.</p>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:12px;padding:28px;transition:box-shadow 0.2s;">
+          <div style="width:48px;height:48px;background:color-mix(in srgb,var(--primary) 15%,transparent);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <span style="font-size:1.5rem;">🔧</span>
+          </div>
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:8px;">Shingle Repair</h3>
+          <p style="color:#6b7280;font-size:0.9rem;">Professional shingle repair services for homes and businesses in St Augustine, FL and surrounding areas.</p>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:12px;padding:28px;transition:box-shadow 0.2s;">
+          <div style="width:48px;height:48px;background:color-mix(in srgb,var(--primary) 15%,transparent);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <span style="font-size:1.5rem;">🔧</span>
+          </div>
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:8px;">Roof Inspection</h3>
+          <p style="color:#6b7280;font-size:0.9rem;">Professional roof inspection services for homes and businesses in St Augustine, FL and surrounding areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section style="background:#0f172a;color:#fff;padding:80px 20px;">
+    <div style="max-width:900px;margin:0 auto;text-align:center;">
+      <p style="color:var(--primary);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.85rem;margin-bottom:12px;">Why St Augustine, FL Chooses Us</p>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:2.2rem;margin-bottom:48px;">The S&S Roofing of Saint Augustine LLC Difference</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;">
+        <div style="padding:24px;">
+          <p style="font-size:2rem;margin-bottom:12px;">⚡</p>
+          <h3 style="font-weight:700;margin-bottom:8px;">Fast Response</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;">We respond quickly and get the job done right the first time.</p>
+        </div>
+        <div style="padding:24px;">
+          <p style="font-size:2rem;margin-bottom:12px;">💰</p>
+          <h3 style="font-weight:700;margin-bottom:8px;">Honest Pricing</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;">No hidden fees. Flat-rate pricing confirmed before we start work.</p>
+        </div>
+        <div style="padding:24px;">
+          <p style="font-size:2rem;margin-bottom:12px;">🏆</p>
+          <h3 style="font-weight:700;margin-bottom:8px;">Quality Work</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;">Fully licensed and insured. We back every job with a satisfaction guarantee.</p>
+        </div>
+        <div style="padding:24px;">
+          <p style="font-size:2rem;margin-bottom:12px;">📍</p>
+          <h3 style="font-weight:700;margin-bottom:8px;">Local Team</h3>
+          <p style="color:#94a3b8;font-size:0.9rem;">Based in St Augustine, FL. We know this area and we're invested in our community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS -->
+  <section id="areas" style="padding:80px 20px;background:#f8fafc;">
+    <div style="max-width:900px;margin:0 auto;text-align:center;">
+      <p style="color:var(--primary);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.85rem;margin-bottom:12px;">Coverage Area</p>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:2.2rem;margin-bottom:12px;">Roofer Services Near Me</h2>
+      <p style="color:#6b7280;margin-bottom:40px;">We provide roofer services across St Augustine, FL and the surrounding communities.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in St Augustine, FL</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Saint Augustine</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in St. Augustine Beach</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Vilano Beach</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Crescent Beach</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Anastasia Island</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Hastings</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Elkton</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in St. Johns</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in World Golf Village</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Nocatee</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Ponte Vedra Beach</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Fruit Cove</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Switzerland</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Palm Coast</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Palatka</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Jacksonville</span>
+        <span style="background:#fff;border:1px solid #e5e7eb;padding:10px 20px;border-radius:8px;font-weight:600;font-size:0.9rem;color:#374151;">roofer in Jacksonville Beach</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding:80px 20px;">
+    <div style="max-width:800px;margin:0 auto;">
+      <p style="text-align:center;color:var(--primary);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.85rem;margin-bottom:12px;">FAQ</p>
+      <h2 style="text-align:center;font-family:'DM Serif Display',serif;font-size:2.2rem;margin-bottom:48px;">Roofer Questions, Answered</h2>
+      <div style="space-y:0;">
+        <div style="border-bottom:1px solid #e5e7eb;padding:24px 0;">
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:10px;">How much does roofer cost in St Augustine, FL?</h3>
+          <p style="color:#6b7280;">Roofer costs in St Augustine, FL vary depending on the size of the job. We offer flat-rate pricing with a free on-site estimate so there are never any surprises. Call us for a same-day quote.</p>
+        </div>
+        <div style="border-bottom:1px solid #e5e7eb;padding:24px 0;">
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:10px;">Are you licensed and insured in Florida?</h3>
+          <p style="color:#6b7280;">Yes, we are fully licensed and insured. All our technicians are certified professionals. We carry liability insurance and workers' compensation for your protection.</p>
+        </div>
+        <div style="border-bottom:1px solid #e5e7eb;padding:24px 0;">
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:10px;">Do you offer emergency roofer service?</h3>
+          <p style="color:#6b7280;">Yes, we offer 24/7 emergency service for urgent situations. Call us at any time and we'll dispatch a technician as quickly as possible.</p>
+        </div>
+        <div style="border-bottom:1px solid #e5e7eb;padding:24px 0;">
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:10px;">What areas do you serve near St Augustine, FL?</h3>
+          <p style="color:#6b7280;">We serve St Augustine, FL and all surrounding communities. If you're unsure whether we cover your area, just give us a call — we're happy to let you know.</p>
+        </div>
+        <div style="border-bottom:1px solid #e5e7eb;padding:24px 0;">
+          <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:10px;">How quickly can you come out?</h3>
+          <p style="color:#6b7280;">For most jobs we can schedule same-day or next-day service. Emergency calls are prioritized. We always provide a confirmed arrival window so you're not waiting all day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section id="contact" style="background:var(--primary);color:#fff;padding:80px 20px;text-align:center;">
+    <div style="max-width:600px;margin:0 auto;">
+      <h2 style="font-family:'DM Serif Display',serif;font-size:2.5rem;margin-bottom:16px;">Ready to Get Started?</h2>
+      <p style="font-size:1.1rem;opacity:0.9;margin-bottom:36px;">Call now for a free estimate. We typically respond within the hour.</p>
+      <a href="tel:9048260370" style="background:#fff;color:var(--primary);padding:18px 48px;border-radius:12px;font-weight:700;font-size:1.2rem;display:inline-block;">
+        Call (904) 826-0370
+      </a>
+      
+    </div>
+  </section>
+</Layout>
